@@ -52,6 +52,10 @@ Metrics/ParameterLists:
 Layout/FirstHashElementIndentation:
   Enabled: false
 
+# Dir glob is already sorted, but the explicit sort documents intent.
+Lint/RedundantDirGlobSort:
+  Enabled: false
+
 # RSpec describe/context blocks legitimately span many lines
 Metrics/BlockLength:
   AllowedMethods:

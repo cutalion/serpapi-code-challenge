@@ -4,347 +4,304 @@ Total allocated: 631.04 kB (5806 objects)
 Total retained:  0 B (0 objects)
 
 allocated memory by gem
-[36m-----------------------------------[0m
-[34m 414.23 kB[0m  serpapi-code-challenge/lib
-[34m 214.93 kB[0m  nokolexbor-0.7.0-x86_64-linux
-[34m   1.88 kB[0m  other
+-----------------------------------
+ 414.19 kB  serpapi-code-challenge/lib
+ 214.93 kB  nokolexbor-0.7.0-x86_64-linux
+   1.92 kB  other
 
 allocated memory by file
-[36m-----------------------------------[0m
-[34m 414.23 kB[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb
-[34m 194.85 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb
-[34m  20.04 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node_set.rb
-[34m   1.88 kB[0m  <internal:array>
-[34m   40.00 B[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/document.rb
+-----------------------------------
+ 414.19 kB  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb
+ 194.85 kB  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb
+  20.04 kB  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node_set.rb
+   1.88 kB  <internal:array>
+   40.00 B  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/document.rb
+   40.00 B  /home/cutalion/code/serpapi-code-challenge/benchmark/parsers.rb
 
 allocated memory by location
-[36m-----------------------------------[0m
-[34m 288.58 kB[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:81
-[34m 113.20 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:80
-[34m  38.40 kB[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:49
-[34m  32.97 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:77
-[34m  21.60 kB[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:64
-[34m  19.48 kB[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
-[34m  16.52 kB[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m  14.32 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node_set.rb:33
-[34m  12.80 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:768
-[34m  10.28 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:335
-[34m   7.52 kB[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:47
-[34m   6.88 kB[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:50
-[34m   6.57 kB[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:76
-[34m   6.40 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:770
-[34m   5.59 kB[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:74
-[34m   3.20 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:409
-[34m   3.20 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:75
-[34m   3.20 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:760
-[34m   3.20 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:765
-[34m   3.20 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:88
-[34m   3.20 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:90
-[34m   3.20 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node_set.rb:13
-[34m   2.52 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node_set.rb:44
-[34m   1.88 kB[0m  <internal:array>:137
-[34m   1.72 kB[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:48
-[34m  640.00 B[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:28
-[34m  528.00 B[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:62
-[34m  160.00 B[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:29
-[34m   40.00 B[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/document.rb:161
-[34m   40.00 B[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:36
+-----------------------------------
+ 288.58 kB  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:72
+ 113.20 kB  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:80
+  38.40 kB  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:54
+  32.97 kB  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:77
+  21.60 kB  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:45
+  19.48 kB  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
+  16.52 kB  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+  14.32 kB  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node_set.rb:33
+  12.80 kB  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:768
+  10.28 kB  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:335
+   7.52 kB  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:52
+   6.88 kB  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:55
+   6.57 kB  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:38
+   6.40 kB  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:770
+   5.59 kB  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:36
+   3.20 kB  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:409
+   3.20 kB  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:75
+   3.20 kB  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:760
+   3.20 kB  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:765
+   3.20 kB  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:88
+   3.20 kB  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:90
+   3.20 kB  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node_set.rb:13
+   2.52 kB  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node_set.rb:44
+   1.88 kB  <internal:array>:137
+   1.72 kB  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:53
+  640.00 B  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:26
+  528.00 B  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:43
+  160.00 B  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:30
+   40.00 B  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/document.rb:161
+   40.00 B  /home/cutalion/code/serpapi-code-challenge/benchmark/parsers.rb:9
 
 allocated memory by class
-[36m-----------------------------------[0m
-[34m 387.83 kB[0m  String
-[34m 132.84 kB[0m  Nokolexbor::Element
-[34m  67.10 kB[0m  Array
-[34m  21.47 kB[0m  Hash
-[34m  13.96 kB[0m  Nokolexbor::NodeSet
-[34m   4.20 kB[0m  MatchData
-[34m   3.60 kB[0m  Nokolexbor::Text
-[34m   40.00 B[0m  Nokolexbor::Document
+-----------------------------------
+ 387.83 kB  String
+ 132.84 kB  Nokolexbor::Element
+  67.10 kB  Array
+  21.47 kB  Hash
+  13.96 kB  Nokolexbor::NodeSet
+   4.20 kB  MatchData
+   3.60 kB  Nokolexbor::Text
+   40.00 B  Nokolexbor::Document
 
 allocated objects by gem
-[36m-----------------------------------[0m
-[34m      4388[0m  nokolexbor-0.7.0-x86_64-linux
-[34m      1371[0m  serpapi-code-challenge/lib
-[34m        47[0m  other
+-----------------------------------
+      4388  nokolexbor-0.7.0-x86_64-linux
+      1370  serpapi-code-challenge/lib
+        48  other
 
 allocated objects by file
-[36m-----------------------------------[0m
-[34m      3886[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb
-[34m      1371[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb
-[34m       501[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node_set.rb
-[34m        47[0m  <internal:array>
-[34m         1[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/document.rb
+-----------------------------------
+      3886  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb
+      1370  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb
+       501  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node_set.rb
+        47  <internal:array>
+         1  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/document.rb
+         1  /home/cutalion/code/serpapi-code-challenge/benchmark/parsers.rb
 
 allocated objects by location
-[36m-----------------------------------[0m
-[34m      2830[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:80
-[34m       423[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
-[34m       358[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node_set.rb:33
-[34m       317[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m       256[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:335
-[34m       160[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:77
-[34m       122[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:81
-[34m       110[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:64
-[34m       101[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:76
-[34m        94[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:49
-[34m        80[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:409
-[34m        80[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:75
-[34m        80[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:760
-[34m        80[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:765
-[34m        80[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:768
-[34m        80[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:770
-[34m        80[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:88
-[34m        80[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:90
-[34m        80[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node_set.rb:13
-[34m        63[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node_set.rb:44
-[34m        62[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:74
-[34m        47[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:47
-[34m        47[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:50
-[34m        47[0m  <internal:array>:137
-[34m        43[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:48
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:62
-[34m         1[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/document.rb:161
-[34m         1[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:28
-[34m         1[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:29
-[34m         1[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:36
+-----------------------------------
+      2830  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:80
+       423  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
+       358  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node_set.rb:33
+       317  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+       256  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:335
+       160  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:77
+       122  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:72
+       110  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:45
+       101  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:38
+        94  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:54
+        80  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:409
+        80  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:75
+        80  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:760
+        80  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:765
+        80  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:768
+        80  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:770
+        80  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:88
+        80  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:90
+        80  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node_set.rb:13
+        63  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node_set.rb:44
+        62  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:36
+        47  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:52
+        47  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:55
+        47  <internal:array>:137
+        43  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:53
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:43
+         1  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/document.rb:161
+         1  /home/cutalion/code/serpapi-code-challenge/benchmark/parsers.rb:9
+         1  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:26
+         1  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:30
 
 allocated objects by class
-[36m-----------------------------------[0m
-[34m      3321[0m  Nokolexbor::Element
-[34m       988[0m  String
-[34m       903[0m  Array
-[34m       349[0m  Nokolexbor::NodeSet
-[34m       129[0m  Hash
-[34m        90[0m  Nokolexbor::Text
-[34m        25[0m  MatchData
-[34m         1[0m  Nokolexbor::Document
+-----------------------------------
+      3321  Nokolexbor::Element
+       988  String
+       903  Array
+       349  Nokolexbor::NodeSet
+       129  Hash
+        90  Nokolexbor::Text
+        25  MatchData
+         1  Nokolexbor::Document
 
 retained memory by gem
-[36m-----------------------------------[0m
+-----------------------------------
 NO DATA
 
 retained memory by file
-[36m-----------------------------------[0m
+-----------------------------------
 NO DATA
 
 retained memory by location
-[36m-----------------------------------[0m
+-----------------------------------
 NO DATA
 
 retained memory by class
-[36m-----------------------------------[0m
+-----------------------------------
 NO DATA
 
 retained objects by gem
-[36m-----------------------------------[0m
+-----------------------------------
 NO DATA
 
 retained objects by file
-[36m-----------------------------------[0m
+-----------------------------------
 NO DATA
 
 retained objects by location
-[36m-----------------------------------[0m
+-----------------------------------
 NO DATA
 
 retained objects by class
-[36m-----------------------------------[0m
+-----------------------------------
 NO DATA
 
 
 Allocated String Report
-[36m-----------------------------------[0m
-[34m        80[0m  [32m"a"[0m
-[34m        80[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:335
+-----------------------------------
+        80  "a"
+        80  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:335
 
-[34m        70[0m  [32m"1888"[0m
-[34m        42[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m        28[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+        70  "1888"
+        42  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+        28  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m        55[0m  [32m"1889"[0m
-[34m        33[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m        22[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+        55  "1889"
+        33  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+        22  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m        47[0m  [32m"div"[0m
-[34m        47[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:335
+        47  "div"
+        47  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokolexbor-0.7.0-x86_64-linux/lib/nokolexbor/node.rb:335
 
-[34m        40[0m  [32m"1890"[0m
-[34m        24[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m        16[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+        40  "1890"
+        24  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+        16  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m        20[0m  [32m"1887"[0m
-[34m        12[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         8[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+        20  "1887"
+        12  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         8  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m        19[0m  [32m"3d"[0m
-[34m        19[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:81
+        19  "3d"
+        19  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:72
 
-[34m        19[0m  [32m"="[0m
-[34m        19[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:81
+        19  "="
+        19  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:72
 
-[34m        19[0m  [32m"\\x3d"[0m
-[34m        19[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:81
+        19  "\\x3d"
+        19  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:72
 
-[34m        10[0m  [32m"1885"[0m
-[34m         6[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         4[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+        10  "1885"
+         6  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         4  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m        10[0m  [32m"1886"[0m
-[34m         6[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         4[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+        10  "1886"
+         6  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         4  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         8[0m  [32m""[0m
-[34m         8[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         8  ""
+         8  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"1881"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "1881"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"1883"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "1883"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"A Pair of Shoes"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "A Pair of Shoes"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"Bedroom in Arles"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "Bedroom in Arles"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"Bulb Fields"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "Bulb Fields"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"Café Terrace at Night"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "Café Terrace at Night"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"Cypresses"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "Cypresses"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"Garden with Courting Couples: Square Saint-Pierre"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "Garden with Courting Couples: Square Saint-Pierre"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"Gauguin's Chair"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "Gauguin's Chair"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"Head of a Peasant Woman with White Cap"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "Head of a Peasant Woman with White Cap"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"L'Arlésienne"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "L'Arlésienne"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"Mulberry Tree"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "Mulberry Tree"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"Poppy Flowers"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "Poppy Flowers"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"Self-Portrait (Dedicated to Paul Gauguin)"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "Self-Portrait (Dedicated to Paul Gauguin)"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"Self-Portrait with Bandaged Ear"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "Self-Portrait with Bandaged Ear"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"Self-Portrait with Dark Felt Hat at the Easel"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "Self-Portrait with Dark Felt Hat at the Easel"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"Self-Portrait with Grey Felt Hat"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "Self-Portrait with Grey Felt Hat"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"Skull of a Skeleton with Burning Cigarette"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "Skull of a Skeleton with Burning Cigarette"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"Starry Night Over the Rhône"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "Starry Night Over the Rhône"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"Still Life: Vase with Pink Roses"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "Still Life: Vase with Pink Roses"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"The Bedroom"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "The Bedroom"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"The Harvest"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "The Harvest"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"The Night Café"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "The Night Café"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"The Potato Eaters"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "The Potato Eaters"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"The Red Vineyard"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "The Red Vineyard"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"The Yellow House"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+         5  "The Yellow House"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60
 
-[34m         5[0m  [32m"The sower"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
-
-[34m         5[0m  [32m"Tree Roots"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
-
-[34m         5[0m  [32m"Two Cut Sunflowers"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
-
-[34m         5[0m  [32m"Van Gogh self-portrait"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
-
-[34m         5[0m  [32m"Van Gogh's Chair"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
-
-[34m         5[0m  [32m"Vase with Fifteen Sunflowers"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
-
-[34m         5[0m  [32m"Vase with Irises Against a Yellow Background"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
-
-[34m         5[0m  [32m"Vase with Twelve Sunflowers"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
-
-[34m         5[0m  [32m"Wheat Field with Cypresses"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
-
-[34m         5[0m  [32m"Wheatfield Under Thunderclouds"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
-
-[34m         5[0m  [32m"Wheatfield with Crows"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
-
-[34m         5[0m  [32m"Wheatfield with a reaper"[0m
-[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
-[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
-
+         5  "The sower"
+         3  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:61
+         2  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:60

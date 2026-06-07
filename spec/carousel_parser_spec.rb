@@ -261,18 +261,17 @@ RSpec.describe CarouselParser do
     end
   end
 
-  describe '#initialize with a configurable html parser' do
-    %i[nokogiri nokogiri5 nokolexbor].each do |backend|
-      it "produces identical artworks with the #{backend} backend" do
-        default = described_class.parse(van_gogh_html, with: backend)
-        result = described_class.parse(van_gogh_html, with: backend)
+  describe '.parse with an injected html parser' do
+    {
+      nokogiri: ->(html) { Nokogiri::HTML(html) },
+      nokogiri5: ->(html) { Nokogiri::HTML5(html) }
+    }.each do |backend, parser|
+      it "produces the same artworks as the default with an injected #{backend} parser" do
+        default = described_class.parse(van_gogh_html)
+        result = described_class.parse(van_gogh_html, parser: parser)
 
         expect(result).to eq(default)
       end
-    end
-
-    it 'raises ArgumentError for an unknown backend' do
-      expect { described_class.parse(van_gogh_html, with: :bogus) }.to raise_error(ArgumentError)
     end
   end
 end

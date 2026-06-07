@@ -1,9 +1,8 @@
 # frozen_string_literal: true
 
 require 'benchmark/ips'
-require 'nokolexbor'
-require 'nokogiri'
 require 'carousel_parser'
+require_relative 'parsers'
 require_relative 'tee'
 
 $stdout = Tee.new(File.expand_path('reports/parse_benchmark.txt', __dir__))
@@ -19,8 +18,8 @@ puts "End-to-end parse across all fixtures, by html parser backend\n\n"
 Benchmark.ips do |x|
   x.config(time: 5, warmup: 2)
 
-  CarouselParser::HTML_PARSERS.each do |backend|
-    x.report(backend) { fixtures.each_value { |html| CarouselParser.parse(html, with: backend) } }
+  Parsers::ALL.each do |name, parser|
+    x.report(name) { fixtures.each_value { |html| CarouselParser.parse(html, parser: parser) } }
   end
 
   x.compare!

@@ -1,0 +1,392 @@
+Memory profile: van-gogh-paintings.html via nokogiri5 (850 KB input)
+
+Total allocated: 2.89 MB (6274 objects)
+Total retained:  0 B (0 objects)
+
+allocated memory by gem
+[36m-----------------------------------[0m
+[34m   2.51 MB[0m  nokogiri-1.19.3-x86_64-linux-gnu
+[34m 373.27 kB[0m  serpapi-code-challenge/lib
+[34m   1.88 kB[0m  other
+
+allocated memory by file
+[36m-----------------------------------[0m
+[34m   2.17 MB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/html5/document.rb
+[34m 373.27 kB[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb
+[34m 163.73 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb
+[34m 111.14 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb
+[34m  41.98 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/xpath_context.rb
+[34m  20.48 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/css/xpath_visitor.rb
+[34m   5.12 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/css/selector_cache.rb
+[34m   1.88 kB[0m  <internal:array>
+[34m  200.00 B[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/html5.rb
+[34m   40.00 B[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/document.rb
+
+allocated memory by location
+[36m-----------------------------------[0m
+[34m   2.17 MB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/html5/document.rb:153
+[34m 288.58 kB[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:81
+[34m  44.52 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:588
+[34m  41.98 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/xpath_context.rb:10
+[34m  29.77 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:1297
+[34m  25.68 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:1201
+[34m  24.64 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:270
+[34m  23.08 kB[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+[34m  20.48 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/css/xpath_visitor.rb:94
+[34m  20.48 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:1204
+[34m  20.48 kB[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:49
+[34m  16.64 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:225
+[34m  16.52 kB[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m  12.80 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:61
+[34m  11.88 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:1300
+[34m  10.24 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:1202
+[34m  10.24 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:1203
+[34m  10.24 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:238
+[34m   8.32 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:216
+[34m   8.32 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:221
+[34m   7.52 kB[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:47
+[34m   6.57 kB[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:76
+[34m   6.40 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:1310
+[34m   6.40 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:57
+[34m   6.40 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:59
+[34m   5.59 kB[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:74
+[34m   5.18 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:245
+[34m   5.12 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/css/selector_cache.rb:33
+[34m   5.12 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:237
+[34m   5.12 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:264
+[34m   3.20 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:1308
+[34m   1.92 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:233
+[34m   1.88 kB[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:64
+[34m   1.88 kB[0m  <internal:array>:137
+[34m   1.72 kB[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:48
+[34m   1.32 kB[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:1295
+[34m  640.00 B[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:28
+[34m  528.00 B[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:62
+[34m  160.00 B[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/html5.rb:29
+[34m  160.00 B[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/html5/document.rb:123
+[34m  160.00 B[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:29
+[34m   40.00 B[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/html5.rb:297
+[34m   40.00 B[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/html5/document.rb:160
+[34m   40.00 B[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/document.rb:191
+[34m   40.00 B[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:223
+
+allocated memory by class
+[36m-----------------------------------[0m
+[34m   2.16 MB[0m  Nokogiri::HTML5::Document
+[34m 449.33 kB[0m  String
+[34m 140.36 kB[0m  Array
+[34m  50.27 kB[0m  Hash
+[34m  27.64 kB[0m  Nokogiri::XML::Element
+[34m  25.70 kB[0m  MatchData
+[34m  13.96 kB[0m  Nokogiri::XML::NodeSet
+[34m  10.24 kB[0m  Nokogiri::CSS::XPathVisitor
+[34m   5.12 kB[0m  Nokogiri::XML::XPathContext
+[34m   3.60 kB[0m  Nokogiri::XML::Text
+[34m   80.00 B[0m  Nokogiri::XML::Namespace
+
+allocated objects by gem
+[36m-----------------------------------[0m
+[34m      4924[0m  nokogiri-1.19.3-x86_64-linux-gnu
+[34m      1303[0m  serpapi-code-challenge/lib
+[34m        47[0m  other
+
+allocated objects by file
+[36m-----------------------------------[0m
+[34m      2441[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb
+[34m      1833[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb
+[34m      1303[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb
+[34m       384[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/xpath_context.rb
+[34m       128[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/css/selector_cache.rb
+[34m       128[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/css/xpath_visitor.rb
+[34m        47[0m  <internal:array>
+[34m         7[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/html5/document.rb
+[34m         2[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/html5.rb
+[34m         1[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/document.rb
+
+allocated objects by location
+[36m-----------------------------------[0m
+[34m       616[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:270
+[34m       513[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+[34m       384[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/xpath_context.rb:10
+[34m       320[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:61
+[34m       317[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m       297[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:1300
+[34m       258[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:1201
+[34m       256[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:1202
+[34m       256[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:1203
+[34m       256[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:1204
+[34m       208[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:216
+[34m       208[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:221
+[34m       208[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:225
+[34m       160[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:1310
+[34m       160[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:57
+[34m       160[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:59
+[34m       157[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:588
+[34m       128[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/css/selector_cache.rb:33
+[34m       128[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/css/xpath_visitor.rb:94
+[34m       128[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:237
+[34m       128[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:238
+[34m       128[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:245
+[34m       128[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:264
+[34m       122[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:81
+[34m       101[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:76
+[34m        80[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:1297
+[34m        80[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:1308
+[34m        62[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:74
+[34m        48[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:233
+[34m        47[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:47
+[34m        47[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:49
+[34m        47[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:64
+[34m        47[0m  <internal:array>:137
+[34m        43[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:48
+[34m        33[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:1295
+[34m         5[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/html5/document.rb:153
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:62
+[34m         1[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/html5.rb:29
+[34m         1[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/html5.rb:297
+[34m         1[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/html5/document.rb:123
+[34m         1[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/html5/document.rb:160
+[34m         1[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/document.rb:191
+[34m         1[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:223
+[34m         1[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:28
+[34m         1[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:29
+
+allocated objects by class
+[36m-----------------------------------[0m
+[34m      2410[0m  Array
+[34m      2013[0m  String
+[34m       691[0m  Nokogiri::XML::Element
+[34m       349[0m  Nokogiri::XML::NodeSet
+[34m       309[0m  Hash
+[34m       153[0m  MatchData
+[34m       128[0m  Nokogiri::CSS::XPathVisitor
+[34m       128[0m  Nokogiri::XML::XPathContext
+[34m        90[0m  Nokogiri::XML::Text
+[34m         2[0m  Nokogiri::XML::Namespace
+[34m         1[0m  Nokogiri::HTML5::Document
+
+retained memory by gem
+[36m-----------------------------------[0m
+NO DATA
+
+retained memory by file
+[36m-----------------------------------[0m
+NO DATA
+
+retained memory by location
+[36m-----------------------------------[0m
+NO DATA
+
+retained memory by class
+[36m-----------------------------------[0m
+NO DATA
+
+retained objects by gem
+[36m-----------------------------------[0m
+NO DATA
+
+retained objects by file
+[36m-----------------------------------[0m
+NO DATA
+
+retained objects by location
+[36m-----------------------------------[0m
+NO DATA
+
+retained objects by class
+[36m-----------------------------------[0m
+NO DATA
+
+
+Allocated String Report
+[36m-----------------------------------[0m
+[34m       256[0m  [32m"svg"[0m
+[34m       128[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:1202
+[34m       128[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/xpath_context.rb:10
+
+[34m       256[0m  [32m"xmlns"[0m
+[34m       128[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:1202
+[34m       128[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/xpath_context.rb:10
+
+[34m       128[0m  [32m"http://www.w3.org/2000/svg"[0m
+[34m       128[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:1204
+
+[34m       128[0m  [32m"http://www.w3.org/2000/xmlns/"[0m
+[34m       128[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:1204
+
+[34m       128[0m  [32m"xmlns:svg"[0m
+[34m       128[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:1203
+
+[34m       128[0m  [32m"xmlns:xmlns"[0m
+[34m       128[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/node.rb:1203
+
+[34m        80[0m  [32m"//*:a"[0m
+[34m        80[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:245
+
+[34m        70[0m  [32m"1888"[0m
+[34m        42[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m        28[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m        55[0m  [32m"1889"[0m
+[34m        33[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m        22[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m        47[0m  [32m".//*:div"[0m
+[34m        47[0m  /home/cutalion/.rbenv/versions/4.0.5/lib/ruby/gems/4.0.0/gems/nokogiri-1.19.3-x86_64-linux-gnu/lib/nokogiri/xml/searchable.rb:245
+
+[34m        40[0m  [32m"1890"[0m
+[34m        24[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m        16[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m        20[0m  [32m"1887"[0m
+[34m        12[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         8[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m        19[0m  [32m"3d"[0m
+[34m        19[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:81
+
+[34m        19[0m  [32m"="[0m
+[34m        19[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:81
+
+[34m        19[0m  [32m"\\x3d"[0m
+[34m        19[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:81
+
+[34m        10[0m  [32m"1885"[0m
+[34m         6[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         4[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m        10[0m  [32m"1886"[0m
+[34m         6[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         4[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         8[0m  [32m""[0m
+[34m         8[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"1881"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"1883"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"A Pair of Shoes"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"Bedroom in Arles"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"Bulb Fields"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"Café Terrace at Night"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"Cypresses"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"Garden with Courting Couples: Square Saint-Pierre"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"Gauguin's Chair"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"Head of a Peasant Woman with White Cap"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"L'Arlésienne"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"Mulberry Tree"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"Self-Portrait (Dedicated to Paul Gauguin)"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"Self-Portrait with Bandaged Ear"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"Self-Portrait with Dark Felt Hat at the Easel"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"Self-Portrait with Grey Felt Hat"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"Skull of a Skeleton with Burning Cigarette"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"Starry Night Over the Rhône"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"Still Life: Vase with Pink Roses"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"The Potato Eaters"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"The Red Vineyard"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"The Yellow House"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"Two Cut Sunflowers"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"Van Gogh self-portrait"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"Van Gogh's Chair"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"Vase with Fifteen Sunflowers"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"Vase with Irises Against a Yellow Background"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"Vase with Twelve Sunflowers"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"Wheat Field with Cypresses"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"Wheatfield Under Thunderclouds"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"Wheatfield with Crows"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+
+[34m         5[0m  [32m"Wheatfield with a reaper"[0m
+[34m         3[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:70
+[34m         2[0m  /home/cutalion/code/serpapi-code-challenge/lib/carousel_parser.rb:69
+

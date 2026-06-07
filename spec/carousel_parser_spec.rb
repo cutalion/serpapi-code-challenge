@@ -1,47 +1,52 @@
 # frozen_string_literal: true
 
 require 'carousel_parser'
+require 'nokogiri'
+require 'nokolexbor'
 
 RSpec.describe CarouselParser do
   let(:fixtures_dir) { File.expand_path('fixtures', __dir__) }
   let(:van_gogh_html) { File.read(File.join(fixtures_dir, 'van-gogh-paintings.html')) }
-  let(:parser) { described_class.new }
+
+  def parse(html)
+    described_class.parse(html)
+  end
 
   describe '.parse' do
     it 'returns a hash with an artworks array' do
-      result = parser.parse(van_gogh_html)
+      result = parse(van_gogh_html)
 
       expect(result).to be_a(Hash)
       expect(result['artworks']).to be_an(Array)
     end
 
     it 'returns all 47 artworks from the carousel' do
-      result = parser.parse(van_gogh_html)
+      result = parse(van_gogh_html)
 
       expect(result['artworks'].size).to eq(47)
     end
 
     it 'extracts the name of the first artwork' do
-      result = parser.parse(van_gogh_html)
+      result = parse(van_gogh_html)
 
       expect(result['artworks'].first['name']).to eq('The Starry Night')
     end
 
     it 'extracts the extensions of the first artwork' do
-      result = parser.parse(van_gogh_html)
+      result = parse(van_gogh_html)
 
       expect(result['artworks'].first['extensions']).to eq(['1889'])
     end
 
     it 'omits the extensions key for an artwork with no date' do
-      result = parser.parse(van_gogh_html)
+      result = parse(van_gogh_html)
       sunflowers = result['artworks'].find { |a| a['name'] == 'Sunflowers' }
 
       expect(sunflowers).not_to have_key('extensions')
     end
 
     it 'extracts the absolute, entity-decoded link of the first artwork' do
-      result = parser.parse(van_gogh_html)
+      result = parse(van_gogh_html)
 
       expect(result['artworks'].first['link']).to eq(
         'https://www.google.com/search?sca_esv=c2e426814f4d07e9&gl=us&hl=en' \
@@ -52,14 +57,14 @@ RSpec.describe CarouselParser do
     end
 
     it 'extracts the gstatic thumbnail url for an eagerly-loaded artwork' do
-      result = parser.parse(van_gogh_html)
+      result = parse(van_gogh_html)
       artwork = result['artworks'].find { |a| a['name'] == 'Self-Portrait with Bandaged Ear' }
 
       expect(artwork['image']).to start_with('https://encrypted-tbn0.gstatic.com/images?q=tbn:')
     end
 
     it 'extracts the inline base64 thumbnail for a deferred artwork' do
-      result = parser.parse(van_gogh_html)
+      result = parse(van_gogh_html)
 
       expect(result['artworks'].first['image']).to start_with('data:image/jpeg;base64,')
     end
@@ -69,25 +74,25 @@ RSpec.describe CarouselParser do
     let(:deniro_html) { File.read(File.join(fixtures_dir, 'deniro-movies.html')) }
 
     it 'returns all 12 movies from the carousel' do
-      result = parser.parse(deniro_html)
+      result = parse(deniro_html)
 
       expect(result['artworks'].size).to eq(12)
     end
 
     it 'extracts the name of the first movie' do
-      result = parser.parse(deniro_html)
+      result = parse(deniro_html)
 
       expect(result['artworks'].first['name']).to eq('Taxi Driver')
     end
 
     it 'extracts the release year as extensions' do
-      result = parser.parse(deniro_html)
+      result = parse(deniro_html)
 
       expect(result['artworks'].first['extensions']).to eq(['1976'])
     end
 
     it 'extracts the absolute link of the first movie' do
-      result = parser.parse(deniro_html)
+      result = parse(deniro_html)
 
       expect(result['artworks'].first['link']).to start_with(
         'https://www.google.com/search?'
@@ -96,7 +101,7 @@ RSpec.describe CarouselParser do
     end
 
     it 'extracts the inline base64 thumbnail of the first movie' do
-      result = parser.parse(deniro_html)
+      result = parse(deniro_html)
 
       expect(result['artworks'].first['image']).to start_with('data:image/jpeg;base64,')
     end
@@ -106,25 +111,25 @@ RSpec.describe CarouselParser do
     let(:bosch_html) { File.read(File.join(fixtures_dir, 'bosch-artworks.html')) }
 
     it 'returns all 48 artworks from the carousel' do
-      result = parser.parse(bosch_html)
+      result = parse(bosch_html)
 
       expect(result['artworks'].size).to eq(48)
     end
 
     it 'extracts the name of the first artwork' do
-      result = parser.parse(bosch_html)
+      result = parse(bosch_html)
 
       expect(result['artworks'].first['name']).to eq('The Garden of Earthly Delights')
     end
 
     it 'extracts the extensions of the first artwork' do
-      result = parser.parse(bosch_html)
+      result = parse(bosch_html)
 
       expect(result['artworks'].first['extensions']).to eq(['1515'])
     end
 
     it 'extracts the inline base64 thumbnail of the first artwork' do
-      result = parser.parse(bosch_html)
+      result = parse(bosch_html)
 
       expect(result['artworks'].first['image']).to start_with('data:image/jpeg;base64,')
     end
@@ -134,25 +139,25 @@ RSpec.describe CarouselParser do
     let(:tv_shows_html) { File.read(File.join(fixtures_dir, 'deniro-tv-shows.html')) }
 
     it 'returns all 12 tv shows from the carousel' do
-      result = parser.parse(tv_shows_html)
+      result = parse(tv_shows_html)
 
       expect(result['artworks'].size).to eq(12)
     end
 
     it 'extracts the name of the first tv show' do
-      result = parser.parse(tv_shows_html)
+      result = parse(tv_shows_html)
 
       expect(result['artworks'].first['name']).to eq('Zero Day')
     end
 
     it 'extracts a non-year date string as extensions' do
-      result = parser.parse(tv_shows_html)
+      result = parse(tv_shows_html)
 
       expect(result['artworks'].first['extensions']).to eq(['Since 2025'])
     end
 
     it 'extracts the inline base64 thumbnail of the first tv show' do
-      result = parser.parse(tv_shows_html)
+      result = parse(tv_shows_html)
 
       expect(result['artworks'].first['image']).to start_with('data:image/jpeg;base64,')
     end
@@ -162,25 +167,25 @@ RSpec.describe CarouselParser do
     let(:books_html) { File.read(File.join(fixtures_dir, 'shinkai-books.html')) }
 
     it 'returns all 12 books from the carousel' do
-      result = parser.parse(books_html)
+      result = parse(books_html)
 
       expect(result['artworks'].size).to eq(12)
     end
 
     it 'extracts the name of the first book' do
-      result = parser.parse(books_html)
+      result = parse(books_html)
 
       expect(result['artworks'].first['name']).to eq('Your Name')
     end
 
     it 'extracts the publication year as extensions' do
-      result = parser.parse(books_html)
+      result = parse(books_html)
 
       expect(result['artworks'].first['extensions']).to eq(['2016'])
     end
 
     it 'extracts the inline base64 thumbnail of the first book' do
-      result = parser.parse(books_html)
+      result = parse(books_html)
 
       expect(result['artworks'].first['image']).to start_with('data:image/jpeg;base64,')
     end
@@ -190,32 +195,32 @@ RSpec.describe CarouselParser do
     let(:georgian_html) { File.read(File.join(fixtures_dir, 'shinkai-movies-ge.html')) }
 
     it 'returns all 12 movies from the carousel' do
-      result = parser.parse(georgian_html)
+      result = parse(georgian_html)
 
       expect(result['artworks'].size).to eq(12)
     end
 
     it 'extracts a non-latin name in its original script' do
-      result = parser.parse(georgian_html)
+      result = parse(georgian_html)
 
       expect(result['artworks'].first['name']).to eq('შენი სახელი')
     end
 
     it 'extracts the extensions of the first movie' do
-      result = parser.parse(georgian_html)
+      result = parse(georgian_html)
 
       expect(result['artworks'].first['extensions']).to eq(['2016'])
     end
 
     it 'omits the extensions key for a movie with no date' do
-      result = parser.parse(georgian_html)
+      result = parse(georgian_html)
       cross_road = result['artworks'].find { |a| a['name'] == 'Cross Road' }
 
       expect(cross_road).not_to have_key('extensions')
     end
 
     it 'extracts the inline base64 thumbnail of the first movie' do
-      result = parser.parse(georgian_html)
+      result = parse(georgian_html)
 
       expect(result['artworks'].first['image']).to start_with('data:image/jpeg;base64,')
     end
@@ -225,32 +230,32 @@ RSpec.describe CarouselParser do
     let(:georgian_artworks_html) { File.read(File.join(fixtures_dir, 'van-gogh-artworks-ge.html')) }
 
     it 'returns all 48 artworks from the carousel' do
-      result = parser.parse(georgian_artworks_html)
+      result = parse(georgian_artworks_html)
 
       expect(result['artworks'].size).to eq(48)
     end
 
     it 'extracts a non-latin name in its original script' do
-      result = parser.parse(georgian_artworks_html)
+      result = parse(georgian_artworks_html)
 
       expect(result['artworks'].first['name']).to eq('ვარსკვლავებიანი ღამე')
     end
 
     it 'extracts the extensions of the first artwork' do
-      result = parser.parse(georgian_artworks_html)
+      result = parse(georgian_artworks_html)
 
       expect(result['artworks'].first['extensions']).to eq(['1889'])
     end
 
     it 'omits the extensions key for an artwork with no date' do
-      result = parser.parse(georgian_artworks_html)
+      result = parse(georgian_artworks_html)
       sunflowers = result['artworks'].find { |a| a['name'] == 'Sunflowers' }
 
       expect(sunflowers).not_to have_key('extensions')
     end
 
     it 'extracts the inline base64 thumbnail of the first artwork' do
-      result = parser.parse(georgian_artworks_html)
+      result = parse(georgian_artworks_html)
 
       expect(result['artworks'].first['image']).to start_with('data:image/jpeg;base64,')
     end
@@ -259,15 +264,15 @@ RSpec.describe CarouselParser do
   describe '#initialize with a configurable html parser' do
     %i[nokogiri nokogiri5 nokolexbor].each do |backend|
       it "produces identical artworks with the #{backend} backend" do
-        default = described_class.new.parse(van_gogh_html)
-        result = described_class.new(html_parser: backend).parse(van_gogh_html)
+        default = described_class.parse(van_gogh_html, with: backend)
+        result = described_class.parse(van_gogh_html, with: backend)
 
         expect(result).to eq(default)
       end
     end
 
     it 'raises ArgumentError for an unknown backend' do
-      expect { described_class.new(html_parser: :bogus) }.to raise_error(ArgumentError)
+      expect { described_class.parse(van_gogh_html, with: :bogus) }.to raise_error(ArgumentError)
     end
   end
 end

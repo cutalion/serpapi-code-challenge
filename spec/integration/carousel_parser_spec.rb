@@ -9,7 +9,7 @@ RSpec.describe CarouselParser do
 
   describe '.parse' do
     it 'matches the expected array exactly' do
-      result = described_class.new.parse(van_gogh_html)
+      result = described_class.parse(van_gogh_html)
 
       expect(result).to eq(expected)
     end

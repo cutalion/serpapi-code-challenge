@@ -261,6 +261,16 @@ RSpec.describe CarouselParser do
     end
   end
 
+  describe '.parse with a page that has no carousel' do
+    let(:no_carousel_html) { File.read(File.join(fixtures_dir, 'sun.html')) }
+
+    it 'returns an empty artworks array' do
+      result = parse(no_carousel_html)
+
+      expect(result).to eq('artworks' => [])
+    end
+  end
+
   describe '.parse with an injected html parser' do
     {
       nokogiri: ->(html) { Nokogiri::HTML(html) },

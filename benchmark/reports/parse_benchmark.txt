@@ -1,0 +1,47 @@
+Parsing 7 fixtures (4923 KB total)
+
+ruby 4.0.5 (2026-05-20 revision 64336ffd0e) +PRISM [x86_64-linux]
+Warming up --------------------------------------
+      bosch-artworks.html     4.000 i/100ms
+       deniro-movies.html     6.000 i/100ms
+     deniro-tv-shows.html     6.000 i/100ms
+       shinkai-books.html     6.000 i/100ms
+   shinkai-movies-ge.html     6.000 i/100ms
+van-gogh-artworks-ge.html     4.000 i/100ms
+  van-gogh-paintings.html     3.000 i/100ms
+Calculating -------------------------------------
+      bosch-artworks.html     40.334 (±17.4%) i/s   (24.79 ms/i) -    204.000 in   5.057794s
+       deniro-movies.html     60.693 (±13.2%) i/s   (16.48 ms/i) -    306.000 in   5.041782s
+     deniro-tv-shows.html     58.547 (±12.0%) i/s   (17.08 ms/i) -    300.000 in   5.124088s
+       shinkai-books.html     44.739 (±20.1%) i/s   (22.35 ms/i) -    228.000 in   5.096248s
+   shinkai-movies-ge.html     50.649 (±11.8%) i/s   (19.74 ms/i) -    258.000 in   5.093892s
+van-gogh-artworks-ge.html     21.675 (± 9.2%) i/s   (46.14 ms/i) -    112.000 in   5.167353s
+  van-gogh-paintings.html     18.941 (±15.8%) i/s   (52.79 ms/i) -     96.000 in   5.068320s
+
+Comparison:
+       deniro-movies.html:       60.7 i/s
+     deniro-tv-shows.html:       58.5 i/s - same-ish: difference falls within error
+   shinkai-movies-ge.html:       50.6 i/s - same-ish: difference falls within error
+       shinkai-books.html:       44.7 i/s - same-ish: difference falls within error
+      bosch-artworks.html:       40.3 i/s - 1.50x  slower
+van-gogh-artworks-ge.html:       21.7 i/s - 2.80x  slower
+  van-gogh-paintings.html:       18.9 i/s - 3.20x  slower
+
+
+End-to-end parse across all fixtures, by html parser backend
+
+ruby 4.0.5 (2026-05-20 revision 64336ffd0e) +PRISM [x86_64-linux]
+Warming up --------------------------------------
+            nokogiri     1.000 i/100ms
+           nokogiri5     1.000 i/100ms
+          nokolexbor     1.000 i/100ms
+Calculating -------------------------------------
+            nokogiri      5.862 (±17.1%) i/s  (170.58 ms/i) -     30.000 in   5.117302s
+           nokogiri5      2.942 (±34.0%) i/s  (339.92 ms/i) -     15.000 in   5.098864s
+          nokolexbor     12.501 (±24.0%) i/s   (79.99 ms/i) -     63.000 in   5.039546s
+
+Comparison:
+nokolexbor:       12.5 i/s
+  nokogiri:        5.9 i/s - 2.13x  slower
+ nokogiri5:        2.9 i/s - 4.25x  slower
+

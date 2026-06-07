@@ -65,3 +65,4 @@ AllCops:
   NewCops: enable
   Exclude:
     - 'Gemfile'
+    - 'benchmark/**/*'

@@ -4,21 +4,39 @@ require 'nokogiri'
 
 # Extracts a Google Knowledge Graph carousel (artworks, movies, books, etc.)
 # from a saved SERP HTML page, with no additional HTTP requests.
-module CarouselParser
+class CarouselParser
   THUMBNAIL_SELECTOR = 'img[data-deferred], img[data-src]'
   CAROUSEL_LINK_MARKER = 'stick='
 
   GOOGLE_BASE_URL = 'https://www.google.com'
   DEFERRED_IMAGE_REGEX = %r{var s='(data:image/[^']*)';var ii=\[([^\]]*)\]}
 
-  module_function
+  HTML_PARSERS = %i[nokogiri nokogiri5 nokolexbor].freeze
+
+  def initialize(html_parser: :nokogiri)
+    raise ArgumentError, "unknown html_parser: #{html_parser.inspect}" unless HTML_PARSERS.include?(html_parser)
+
+    @html_parser = html_parser
+  end
 
   def parse(html)
-    doc = Nokogiri::HTML(html)
+    doc = build_document(html)
     deferred = deferred_images(html)
 
     items = carousel_items(doc).map { |img, link| build_item(img, link, deferred) }
     { root_key => items }
+  end
+
+  private
+
+  def build_document(html)
+    case @html_parser
+    when :nokogiri then Nokogiri::HTML(html)
+    when :nokogiri5 then Nokogiri::HTML5(html)
+    when :nokolexbor
+      require 'nokolexbor'
+      Nokolexbor::HTML(html)
+    end
   end
 
   def build_item(img, link, deferred)

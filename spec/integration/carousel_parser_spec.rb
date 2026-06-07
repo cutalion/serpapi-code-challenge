@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require "artworks_parser"
+require "carousel_parser"
 
-RSpec.describe ArtworksParser do
+RSpec.describe CarouselParser do
   let(:fixtures_dir) { File.expand_path("../fixtures", __dir__) }
   let(:van_gogh_html) { File.read(File.join(fixtures_dir, "van-gogh-paintings.html")) }
   let(:expected) { JSON.parse(File.read(File.join(fixtures_dir, "expected-array.json"))) }

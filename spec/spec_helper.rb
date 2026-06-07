@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require "json"
+require 'json'
 
-$LOAD_PATH.unshift File.expand_path("../lib", __dir__)
+$LOAD_PATH.unshift File.expand_path('../lib', __dir__)
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|

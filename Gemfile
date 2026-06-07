@@ -3,6 +3,5 @@
 source "https://rubygems.org"
 
 gem "nokogiri"
-
-# Test framework
 gem "rspec"
+gem "rubocop", require: false

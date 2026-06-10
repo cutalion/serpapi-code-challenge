@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 require 'carousel_parser'
-require 'nokogiri'
-require 'nokolexbor'
 
 RSpec.describe CarouselParser do
   let(:fixtures_dir) { File.expand_path('fixtures', __dir__) }
@@ -268,20 +266,6 @@ RSpec.describe CarouselParser do
       result = parse(no_carousel_html)
 
       expect(result).to eq('artworks' => [])
-    end
-  end
-
-  describe '.parse with an injected html parser' do
-    {
-      nokogiri: ->(html) { Nokogiri::HTML(html) },
-      nokogiri5: ->(html) { Nokogiri::HTML5(html) }
-    }.each do |backend, parser|
-      it "produces the same artworks as the default with an injected #{backend} parser" do
-        default = described_class.parse(van_gogh_html)
-        result = described_class.parse(van_gogh_html, parser: parser)
-
-        expect(result).to eq(default)
-      end
     end
   end
 end

@@ -2,32 +2,25 @@
 
 require 'nokolexbor'
 
-# Extracts a Google Knowledge Graph carousel (artworks, movies, books, etc.)
-# from a saved SERP HTML page, with no additional HTTP requests.
 class CarouselParser
   THUMBNAIL_SELECTOR = 'img[data-deferred], img[data-src]'
   CAROUSEL_LINK_MARKER = 'stick='
   DEFERRED_IMAGE_REGEX = %r{var s='(data:image/[^']*)';var ii=\[([^\]]*)\]}
   GOOGLE_BASE_URL = 'https://www.google.com'
-  DEFAULT_PARSER = ->(html) { Nokolexbor::HTML(html) }
 
-  def self.parse(html, parser: DEFAULT_PARSER)
-    new(parser: parser).parse(html)
-  end
-
-  def initialize(parser: DEFAULT_PARSER)
-    @parser = parser
+  def self.parse(html)
+    new.parse(html)
   end
 
   def parse(html)
-    doc = @parser.call(html)
+    doc = Nokolexbor::HTML(html)
     deferred = deferred_images(html)
 
     items = carousel_items(doc).map do |img, link|
       build_item(img, link, deferred)
     end
 
-    { root_key => items }
+    { 'artworks' => items }
   end
 
   private
@@ -59,13 +52,6 @@ class CarouselParser
   def labels(link)
     divs = link.css('div').select { |d| d.children.all?(&:text?) && !d.text.strip.empty? }
     divs.map { |d| d.text.gsub("\u00A0", ' ').strip }
-  end
-
-  # We might want to make this configurable in the future,
-  # because Google shows the same carousel for different content types.
-  # Like, movies, books, tv shows, etc.
-  def root_key
-    'artworks'
   end
 
   # Google escapes certain bytes in Base64 encoded images, like "=" symbols.
